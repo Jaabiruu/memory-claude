@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+mcp-logs/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Memory Bank - Exclude active session data with personal/sensitive info
+memory-bank/active-session/current-focus.md
+memory-bank/active-session/workflow-state.md
+memory-bank/active-session/continuation-prompt.md
+memory-bank/active-session/next-steps.md
+
+# Memory Bank - Exclude session snapshots with potentially sensitive data
+memory-bank/session-snapshots/*.md
+!memory-bank/session-snapshots/README.md
+
+# Memory Bank - Exclude populated knowledge base if it contains proprietary info
+# Uncomment these lines if your knowledge base contains sensitive information:
+# memory-bank/knowledge-base/patterns-learned.md
+# memory-bank/knowledge-base/decisions-made.md
+# memory-bank/knowledge-base/solutions-found.md
+# memory-bank/knowledge-base/code-snippets.md
+# memory-bank/knowledge-base/testing-approaches.md
+
+# Keep the template structure but exclude personal project data
+*.local
+*.private
