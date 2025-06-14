@@ -62,7 +62,7 @@ The script automatically validates, but verify:
 2. ./init-memory-bank.sh [project-dir]  # Initialize memory bank
 3. cat memory-claude/memory-bank/CLAUDE.md >> CLAUDE.md  # Add framework instructions
 4. claude -c (for conversation continuity)
-5. Begin with #@VAN mode
+5. Begin with !@VAN mode
 ```
 
 ## [Continue with all the workflow instructions from the current CLAUDE.md...]
