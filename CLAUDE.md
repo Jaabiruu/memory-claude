@@ -58,11 +58,15 @@ memory-bank/
 │   ├── continuation-prompt.md
 │   ├── workflow-state.md
 │   └── next-steps.md
-└── core-files/
-    ├── tasks.md (SACRED - Single source of truth)
-    ├── activeContext.md
-    ├── progress.md
-    └── complexity.md
+├── core-files/
+│   ├── tasks.md (SACRED - Single source of truth)
+│   ├── activeContext.md
+│   ├── progress.md
+│   └── complexity.md
+├── evaluation-engine.md (Intelligent curation system)
+├── quality-thresholds.md (Configurable quality standards)
+├── curation-log.md (Decision tracking and learning)
+└── curation-queue.md (Manual review queue management)
 ```
 
 ## Context Window Management
@@ -86,6 +90,7 @@ When context threshold is reached:
    - Document solutions found for problems
    - Record architectural insights and decisions
    - Save reusable code snippets and approaches
+   - **Apply intelligent curation**: Automatically evaluate discoveries using quality thresholds
 
 3. **Create Continuation Instructions**
    - Write clear self-reminder for resumption
@@ -128,6 +133,18 @@ After `/compact` execution:
 - `#decisions` - Review architectural decisions made
 - `#solutions [problem]` - Find solutions to similar problems
 - `#next` - Proceed to next logical workflow mode
+
+### Intelligent Curation Commands
+- `#evaluate-session` - Evaluate all discoveries from current session
+- `#evaluate-item [item]` - Evaluate specific item for inclusion
+- `#curation-status` - Show current curation queue and statistics
+- `#review-queue [priority|all]` - Show items requiring manual review
+- `#approve [item-id]` - Manually approve item for inclusion
+- `#reject [item-id]` - Manually reject item with rationale
+- `#force-include [item]` - Override low score to include
+- `#force-exclude [item]` - Override high score to exclude
+- `#set-threshold [category] [value]` - Adjust category thresholds
+- `#curation-settings` - View/modify curation configuration
 
 ### Fractal Workflow Commands
 - `#@SUBTASK-VAN [task]` - Apply VAN mode to specific subtask
@@ -318,11 +335,38 @@ Each mode has specific entry and exit criteria:
 - `#validate-knowledge` - Check knowledge base consistency
 - `#validate-session` - Validate session state and continuity
 
+## Intelligent Memory Curation System
+
+### Core Curation Principles
+- **Quality Over Quantity**: Only high-value information enters the knowledge base
+- **Automatic Evaluation**: Multi-criteria scoring prevents memory pollution
+- **Smart Thresholds**: Category-specific quality standards with learning optimization
+- **Manual Override**: User control with full justification and tracking
+
+### Curation Integration Points
+- **@REFLECT Mode**: Automatic evaluation of session discoveries
+- **@ARCHIVE Mode**: Comprehensive evaluation before knowledge consolidation
+- **Context Preservation**: Smart selection of preservation-worthy content
+- **Fractal Workflows**: Quality assessment of subtask learnings before integration
+
+### Evaluation Framework
+- **5-Criteria Scoring**: Novelty, Reusability, Impact, Generalizability, Validation
+- **Category-Specific Weights**: Optimized scoring for patterns, solutions, decisions, code, testing
+- **Think Tool Integration**: Complex evaluation scenarios receive structured reasoning
+- **Learning System**: Continuous improvement based on curation decision effectiveness
+
+### Threshold Management
+- **Adaptive Thresholds**: Performance-based optimization with user feedback
+- **Context-Sensitive**: Project type and domain adjustments
+- **User Customization**: Full control over quality standards and decision criteria
+- **Effectiveness Tracking**: Comprehensive metrics and continuous improvement
+
 ## Development Notes
 
 - **Cognitive Optimization**: Each mode leverages different thinking patterns for maximum effectiveness
 - **Context Efficiency**: Intelligent context management prevents workflow interruption
-- **Knowledge Accumulation**: Continuous learning and pattern recognition across projects
+- **Knowledge Accumulation**: Continuous learning and pattern recognition across projects with quality curation
 - **CLI Native**: Built specifically for Claude Code's CLI environment and capabilities
 - **Session Continuity**: Seamless workflow resumption across multiple CLI sessions
-- **Think Tool Integration**: Strategic use of structured reasoning for complex decisions
+- **Think Tool Integration**: Strategic use of structured reasoning for complex decisions and curation
+- **Intelligent Curation**: Automated quality assessment ensures high-value knowledge preservation

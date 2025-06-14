@@ -106,6 +106,27 @@
    - Plan backup and disaster recovery
    - Document operational procedures
 
+### Phase 5: Session Discovery Evaluation
+**Apply intelligent curation to reflection discoveries:**
+
+1. **Discovery Identification**
+   - Extract patterns discovered during quality assessment
+   - Identify solutions found for performance and quality issues
+   - Document debugging techniques and approaches used
+   - Capture architectural insights and decisions made
+
+2. **Automatic Evaluation**
+   - Apply evaluation engine to each discovery
+   - Score based on novelty, reusability, impact, generalizability, validation
+   - Use Think tool for complex evaluation scenarios
+   - Generate suggested inclusion/exclusion decisions
+
+3. **Curation Decision Processing**
+   - Auto-include high-scoring discoveries (above category thresholds)
+   - Queue borderline items for manual review with full context
+   - Auto-exclude low-quality items with documented rationale
+   - Update curation log with all decisions and reasoning
+
 ## Required Outputs
 
 ### File Updates
@@ -159,6 +180,9 @@
 - [ ] Performance benchmarks completed and analyzed
 - [ ] Code quality review finished with recommendations
 - [ ] Improvement plan created and prioritized
+- [ ] **Session discoveries evaluated using curation engine**
+- [ ] **High-quality discoveries stored in knowledge base**
+- [ ] **Borderline discoveries queued for manual review**
 
 ### Quality Gates
 - [ ] Think Tool used for systematic quality assessment
@@ -166,6 +190,8 @@
 - [ ] Performance requirements met or exceptions documented
 - [ ] Critical issues have remediation plans
 - [ ] Quality standards maintained throughout assessment
+- [ ] **Curation decisions logged with rationales**
+- [ ] **Quality thresholds applied to all discoveries**
 
 ### Validation Checklist
 - [ ] Functional requirements fully validated
@@ -173,6 +199,8 @@
 - [ ] Security requirements verified
 - [ ] Performance requirements benchmarked
 - [ ] User acceptance criteria met
+- [ ] **Discovery evaluation completed using multi-criteria scoring**
+- [ ] **Curation queue updated with review items**
 
 ## Next Mode Transition
 
@@ -191,12 +219,18 @@
 - Testing outcomes and validation results
 - Code quality review findings
 
-### Knowledge Extraction
-- Quality assessment methodologies
-- Testing strategies and techniques
-- Performance analysis approaches
-- Code review best practices
-- Improvement planning processes
+### Knowledge Extraction with Intelligent Curation
+- Quality assessment methodologies → **Auto-evaluate** for patterns-learned.md
+- Testing strategies and techniques → **Auto-evaluate** for testing-approaches.md
+- Performance analysis approaches → **Auto-evaluate** for solutions-found.md
+- Code review best practices → **Auto-evaluate** for patterns-learned.md
+- Improvement planning processes → **Auto-evaluate** for decisions-made.md
+
+**Automatic Evaluation Process:**
+1. **Extract Discoveries**: Identify patterns, solutions, and insights from reflection
+2. **Apply Curation Engine**: Score discoveries using 5-criteria evaluation framework
+3. **Process Decisions**: Auto-include high-quality items, queue borderline cases for review
+4. **Update Curation Log**: Track all evaluation decisions and rationales
 
 ---
 **REFLECT Mode Complete**: Quality assessment and validation finished

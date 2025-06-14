@@ -64,26 +64,33 @@
    - Write troubleshooting guides
    - Create FAQ and support documentation
 
-### Phase 3: Knowledge Base Update
-**Update organizational knowledge base:**
+### Phase 3: Intelligent Knowledge Base Update
+**Apply comprehensive curation to all project knowledge:**
 
-1. **Pattern Library Update**
-   - Add new patterns to patterns-learned.md
-   - Document pattern applicability and contexts
-   - Include implementation examples and templates
-   - Cross-reference with similar patterns
+1. **Comprehensive Discovery Extraction**
+   - Extract all patterns discovered throughout the project
+   - Identify all solutions found and debugging techniques used
+   - Document all architectural and design decisions made
+   - Capture all code snippets and testing approaches developed
 
-2. **Solution Repository Update**
-   - Add problem-solution pairs to solutions-found.md
-   - Document debugging techniques and approaches
-   - Include troubleshooting guides and fixes
-   - Reference related solutions and alternatives
+2. **Batch Curation Evaluation**
+   - Apply evaluation engine to all extracted knowledge
+   - Use Think tool for complex pattern and solution assessment
+   - Score discoveries using 5-criteria framework with project context
+   - Generate comprehensive curation recommendations
 
-3. **Decision Documentation**
-   - Update decisions-made.md with architectural choices
-   - Document decision criteria and trade-offs
-   - Include outcome assessment and learnings
-   - Reference similar decisions and contexts
+3. **Curation Decision Processing**
+   - Auto-include high-quality discoveries above thresholds
+   - Process manual review queue for borderline items
+   - Apply manual overrides based on strategic project value
+   - Update knowledge base files only with curated, high-value content
+
+4. **Quality-Assured Knowledge Storage**
+   - Store auto-approved patterns in patterns-learned.md
+   - Add validated solutions to solutions-found.md
+   - Document approved decisions in decisions-made.md
+   - Include quality code snippets in code-snippets.md
+   - Archive proven testing approaches in testing-approaches.md
 
 ### Phase 4: Future Reference Preparation
 **Prepare materials for future projects:**
@@ -140,24 +147,19 @@
    - API and interface specifications
    - Deployment and operational guides
 
-### Knowledge Base Updates
-6. **Update knowledge-base/patterns-learned.md**
-   - New patterns discovered and used
-   - Pattern effectiveness and applicability
-   - Implementation examples and templates
-   - Cross-references and relationships
+### Curated Knowledge Base Updates
+6. **Update knowledge-base files with curated content only**
+   - **patterns-learned.md**: Only high-quality, reusable patterns
+   - **solutions-found.md**: Only validated, effective solutions
+   - **decisions-made.md**: Only well-reasoned, impactful decisions
+   - **code-snippets.md**: Only clean, reusable code examples
+   - **testing-approaches.md**: Only proven, effective testing strategies
 
-7. **Update knowledge-base/solutions-found.md**
-   - New solutions and problem-solving approaches
-   - Debugging techniques and insights
-   - Troubleshooting guides and fixes
-   - Tool and technology insights
-
-8. **Update knowledge-base/decisions-made.md**
-   - Architectural and design decisions
-   - Decision rationale and trade-offs
-   - Outcome assessment and learnings
-   - Alternative approaches considered
+7. **Curation Quality Documentation**
+   - Update curation-log.md with all archival decisions
+   - Document evaluation rationale for each included item
+   - Record any manual overrides and their justifications
+   - Track curation effectiveness for future threshold optimization
 
 ### Future Reference Materials
 9. **Create templates-and-scaffolding/**
@@ -185,13 +187,16 @@
 ### Mandatory Requirements
 - [ ] Complete project documentation created
 - [ ] All patterns and learnings extracted and documented
-- [ ] Knowledge base updated with project insights
+- [ ] **Knowledge base updated only with curated, high-quality content**
+- [ ] **Comprehensive curation evaluation completed for all discoveries**
 - [ ] Future reference materials prepared
 - [ ] Project properly archived and organized
 
 ### Quality Gates
 - [ ] Think Tool used for comprehensive knowledge extraction
+- [ ] **Think Tool used for complex curation evaluation scenarios**
 - [ ] All significant patterns and insights captured
+- [ ] **Quality thresholds applied to all knowledge base updates**
 - [ ] Documentation is complete and accessible
 - [ ] Knowledge is organized for future retrieval
 - [ ] Templates and references are ready for reuse
@@ -201,7 +206,9 @@
 - [ ] Technical documentation complete
 - [ ] User documentation complete
 - [ ] Lessons learned documented
-- [ ] Knowledge base updated
+- [ ] **Knowledge base updated with curated content only**
+- [ ] **Curation decisions logged with full rationale**
+- [ ] **Manual review queue processed completely**
 - [ ] Templates and references created
 
 ## Project Completion
@@ -223,12 +230,18 @@
 - Future reference materials
 - Project success metrics and outcomes
 
-### Knowledge Extraction
-- Project management methodologies
-- Technical problem-solving approaches
-- Quality assurance practices
-- Documentation strategies
-- Knowledge management techniques
+### Knowledge Extraction with Intelligent Curation
+- Project management methodologies → **Curated patterns and decisions**
+- Technical problem-solving approaches → **Validated solutions and techniques**
+- Quality assurance practices → **Proven testing approaches**
+- Documentation strategies → **Effective documentation patterns**
+- Knowledge management techniques → **Refined curation and archival methods**
+
+**Final Curation Summary:**
+- All project knowledge evaluated using multi-criteria framework
+- Only high-quality, reusable insights stored in knowledge base
+- Comprehensive curation log maintained for future optimization
+- Quality thresholds validated and adjusted based on project learnings
 
 ---
 **ARCHIVE Mode Complete**: Project fully documented and archived
