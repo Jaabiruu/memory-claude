@@ -58,29 +58,28 @@ your-project/
 ├── CLAUDE.md                     # Framework instructions
 ├── init-memory-bank.sh          # Initialization script
 ├── validate-memory-bank.sh      # Validation script
-└── memory-bank/
-    ├── core-files/
-    │   ├── tasks.md              # SACRED - Single source of truth
-    │   ├── activeContext.md      # Current focus and context
-    │   ├── progress.md           # Progress tracking
-    │   └── complexity.md         # Complexity assessment
-    ├── knowledge-base/
-    │   ├── patterns-learned.md   # Development patterns
-    │   ├── decisions-made.md     # Architectural decisions
-    │   ├── solutions-found.md    # Technical solutions
-    │   ├── code-snippets.md      # Reusable code
-    │   └── testing-approaches.md # Testing strategies
-    ├── active-session/
-    │   ├── current-focus.md      # Current work focus
-    │   ├── continuation-prompt.md # Resumption instructions
-    │   ├── workflow-state.md     # Current workflow state
-    │   └── next-steps.md         # Immediate next steps
-    ├── session-snapshots/        # Context preservation
-    ├── workflow-modes/           # Mode-specific files
-    ├── evaluation-engine.md      # Curation system
-    ├── quality-thresholds.md     # Quality standards
-    ├── curation-log.md          # Curation decisions
-    └── curation-queue.md        # Manual review queue
+├── core-files/
+│   ├── tasks.md              # SACRED - Single source of truth
+│   ├── activeContext.md      # Current focus and context
+│   ├── progress.md           # Progress tracking
+│   └── complexity.md         # Complexity assessment
+├── knowledge-base/
+│   ├── patterns-learned.md   # Development patterns
+│   ├── decisions-made.md     # Architectural decisions
+│   ├── solutions-found.md    # Technical solutions
+│   ├── code-snippets.md      # Reusable code
+│   └── testing-approaches.md # Testing strategies
+├── active-session/
+│   ├── current-focus.md      # Current work focus
+│   ├── continuation-prompt.md # Resumption instructions
+│   ├── workflow-state.md     # Current workflow state
+│   └── next-steps.md         # Immediate next steps
+├── session-snapshots/        # Context preservation
+├── workflow-modes/           # Mode-specific files
+├── evaluation-engine.md      # Curation system
+├── quality-thresholds.md     # Quality standards
+├── curation-log.md          # Curation decisions
+└── curation-queue.md        # Manual review queue
 ```
 
 ## 🚀 Workflow Usage
@@ -260,10 +259,10 @@ claude -c
 - **Preserve context automatically** - Never lose progress to context limits
 
 ### File Usage Rules
-- **NEVER create new .md files in memory-bank/ root**
+- **NEVER create new .md files in project root**
 - **ALWAYS use existing file structure**
 - **ALWAYS append to existing files rather than creating new ones**
-- **Project documentation goes in project directory, NOT memory-bank**
+- **Project documentation goes in project directory, separate from workflow files**
 
 ## 🤔 Troubleshooting
 
@@ -271,7 +270,7 @@ claude -c
 
 **"Workflow commands not working"**
 - Run `../memory-claude/validate-memory-bank.sh` to check structure
-- Ensure memory-bank directory exists with all subdirectories
+- Ensure all workflow directories exist (workflow-modes, knowledge-base, etc.)
 
 **"Mode checklist items failing"**
 - Verify required files exist in knowledge-base/
@@ -279,7 +278,7 @@ claude -c
 
 **"Context preservation failing"**
 - Ensure session-snapshots/ directory exists
-- Check write permissions on memory-bank files
+- Check write permissions on workflow files
 
 **"Curation system not responding"**
 - Verify evaluation-engine.md and quality-thresholds.md exist
@@ -291,15 +290,15 @@ claude -c
 ../memory-claude/validate-memory-bank.sh
 
 # Verify individual components
-ls -la memory-bank/
-ls -la memory-bank/core-files/
-ls -la memory-bank/knowledge-base/
+ls -la core-files/
+ls -la knowledge-base/
+ls -la workflow-modes/
 ```
 
 ## 🛠️ Customization
 
 ### Adjusting Quality Thresholds
-Edit `memory-bank/quality-thresholds.md` to modify curation criteria:
+Edit `quality-thresholds.md` to modify curation criteria:
 ```markdown
 ## Category Thresholds (0-100 scale)
 - Patterns: 75

@@ -35,7 +35,7 @@ This file provides Claude Code with a comprehensive workflow system based on cur
 
 **Required Directory Structure:**
 ```
-memory-bank/
+project-root/
 ├── workflow-modes/
 │   ├── van-mode.md
 │   ├── plan-mode.md
@@ -105,8 +105,8 @@ When context threshold is reached:
 
 ### Post-Compaction Resumption
 After `/compact` execution:
-1. Read `memory-bank/active-session/continuation-prompt.md`
-2. Review `memory-bank/active-session/workflow-state.md`
+1. Read `active-session/continuation-prompt.md`
+2. Review `active-session/workflow-state.md`
 3. Validate current project state against latest snapshot
 4. Resume workflow from documented position with full context
 
@@ -312,13 +312,13 @@ Each mode has specific entry and exit criteria:
 
 ### Memory File Imports
 ```markdown
-@memory-bank/workflow-modes/van-mode.md
-@memory-bank/workflow-modes/plan-mode.md
-@memory-bank/workflow-modes/creative-mode.md
-@memory-bank/workflow-modes/implement-mode.md
-@memory-bank/workflow-modes/reflect-mode.md
-@memory-bank/workflow-modes/archive-mode.md
-@memory-bank/core-files/complexity.md
+@workflow-modes/van-mode.md
+@workflow-modes/plan-mode.md
+@workflow-modes/creative-mode.md
+@workflow-modes/implement-mode.md
+@workflow-modes/reflect-mode.md
+@workflow-modes/archive-mode.md
+@core-files/complexity.md
 ```
 
 ## Quality Assurance
