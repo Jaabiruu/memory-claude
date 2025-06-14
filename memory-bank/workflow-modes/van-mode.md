@@ -152,7 +152,7 @@
 - **Level 2**: Proceed to @PLAN mode
 - **Level 3-4**: Proceed to @PLAN mode
 
-**Transition Command**: `!@PLAN` or `!@IMPLEMENT` based on complexity
+**Transition Command**: `@PLAN` or `@IMPLEMENT` based on complexity
 
 ## Context Preservation Notes
 

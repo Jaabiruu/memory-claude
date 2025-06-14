@@ -198,7 +198,7 @@
 
 **All Complexity Levels**: Proceed to @REFLECT mode
 
-**Transition Command**: `!@REFLECT`
+**Transition Command**: `@REFLECT`
 
 ## Context Preservation Notes
 

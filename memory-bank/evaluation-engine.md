@@ -102,7 +102,7 @@ Emphasis: Reusability and generalizability for code reuse
 1. **@REFLECT Mode**: Automatic evaluation of session discoveries
 2. **@ARCHIVE Mode**: Comprehensive evaluation before storage
 3. **Context Preservation**: Smart selection of preservation-worthy content
-4. **Manual Command**: `!evaluate-item [item]` or `!evaluate-session`
+4. **Manual Command**: `@evaluate-item [item]` or `@evaluate-session`
 
 ### Evaluation Workflow
 
@@ -199,7 +199,7 @@ Recommendation needed: Include, exclude, or conditional storage"
 ## 📋 Manual Override System
 
 ### Override Triggers
-- User command: `!force-include [item]` or `!force-exclude [item]`
+- User command: `@force-include [item]` or `@force-exclude [item]`
 - Think tool recommendation for complex cases
 - Category-specific special handling rules
 - Strategic knowledge preservation needs
@@ -311,10 +311,10 @@ Workflow Mode Integration:
 - Fractal Workflows: Evaluate subtask learnings
 
 Command Integration:
-- !evaluate-session: Batch evaluate current session
-- !evaluate-item [item]: Evaluate specific item
-- !review-queue: Process manual review items
-- !curation-status: Show evaluation statistics
+- @evaluate-session: Batch evaluate current session
+- @evaluate-item [item]: Evaluate specific item
+- @review-queue: Process manual review items
+- @curation-status: Show evaluation statistics
 ```
 
 ### Error Handling

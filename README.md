@@ -25,7 +25,7 @@ A comprehensive workflow system for Claude Code that provides cognitive speciali
 
 4. **Begin workflow**
    ```
-   !@VAN
+   @VAN
    ```
 
 ## 🏗️ What This Framework Provides
@@ -86,43 +86,43 @@ your-project/
 
 ### Basic Workflow Commands
 ```bash
-!@VAN        # Enter VAN mode (required first step)
-!@PLAN       # Enter PLAN mode
-!@CREATIVE   # Enter CREATIVE mode
-!@IMPLEMENT  # Enter IMPLEMENT mode
-!@REFLECT    # Enter REFLECT mode
-!@ARCHIVE    # Enter ARCHIVE mode
+@VAN        # Enter VAN mode (required first step)
+@PLAN       # Enter PLAN mode
+@CREATIVE   # Enter CREATIVE mode
+@IMPLEMENT  # Enter IMPLEMENT mode
+@REFLECT    # Enter REFLECT mode
+@ARCHIVE    # Enter ARCHIVE mode
 ```
 
 ### Context Management
 ```bash
-!context-status              # Check current context usage
-!preserve-now                # Force immediate preservation
-!compact-safe                # Preserve and execute /compact
-!resume-from [snapshot]      # Resume from specific snapshot
+@context-status              # Check current context usage
+@preserve-now                # Force immediate preservation
+@compact-safe                # Preserve and execute /compact
+@resume-from [snapshot]      # Resume from specific snapshot
 ```
 
 ### Knowledge Management
 ```bash
-!recall [topic]              # Search knowledge base
-!patterns                    # List discovered patterns
-!decisions                   # Review architectural decisions
-!solutions [problem]         # Find similar solutions
+@recall [topic]              # Search knowledge base
+@patterns                    # List discovered patterns
+@decisions                   # Review architectural decisions
+@solutions [problem]         # Find similar solutions
 ```
 
 ### Curation System
 ```bash
-!evaluate-session            # Evaluate current discoveries
-!evaluate-item [item]        # Evaluate specific item
-!curation-status             # Show curation queue
-!review-queue                # Show manual review items
+@evaluate-session            # Evaluate current discoveries
+@evaluate-item [item]        # Evaluate specific item
+@curation-status             # Show curation queue
+@review-queue                # Show manual review items
 ```
 
 ### Fractal Workflows
 ```bash
-!@SUBTASK-VAN [task]         # Apply VAN mode to subtask
-!@FRACTAL-WORKFLOW [task]    # Full workflow for complex subtask
-!feedback-loop               # Integrate subtask results
+@SUBTASK-VAN [task]         # Apply VAN mode to subtask
+@FRACTAL-WORKFLOW [task]    # Full workflow for complex subtask
+@feedback-loop               # Integrate subtask results
 ```
 
 ## 📊 Complexity-Based Routing
@@ -143,12 +143,12 @@ The framework automatically routes based on project complexity:
 - **70% Context**: MANDATORY preservation and /compact
 
 ### Context Preservation Protocol
-1. Run `!context-status`
+1. Run `@context-status`
 2. If >50%: STOP work immediately
-3. Run `!evaluate-session`
+3. Run `@evaluate-session`
 4. Create session snapshot
 5. Execute `/compact`
-6. Resume with `!resume-from [snapshot]`
+6. Resume with `@resume-from [snapshot]`
 
 ## 🧠 Intelligent Curation
 
@@ -213,7 +213,7 @@ claude init
 claude -c
 
 # 3. Begin workflow
-!@VAN
+@VAN
 ```
 
 ### Resuming Work
@@ -225,29 +225,29 @@ claude -c
 claude -c
 
 # 3. Check current state
-!context-status
-!recall current-project
+@context-status
+@recall current-project
 ```
 
 ### Complex Feature Development
 ```bash
 # 1. Start with analysis
-!@VAN
+@VAN
 
 # 2. Plan implementation
-!@PLAN
+@PLAN
 
 # 3. Explore design options
-!@CREATIVE
+@CREATIVE
 
 # 4. Implement with quality
-!@IMPLEMENT
+@IMPLEMENT
 
 # 5. Validate and improve
-!@REFLECT
+@REFLECT
 
 # 6. Document learnings
-!@ARCHIVE
+@ARCHIVE
 ```
 
 ## 🚫 Critical Rules
@@ -282,7 +282,7 @@ claude -c
 
 **"Curation system not responding"**
 - Verify evaluation-engine.md and quality-thresholds.md exist
-- Run `!curation-status` to check system state
+- Run `@curation-status` to check system state
 
 ### Validation
 ```bash
@@ -343,4 +343,4 @@ MIT License - feel free to use and modify for your projects.
 
 ---
 
-**Ready to supercharge your Claude Code workflow? Start with `./init-memory-bank.sh` and begin your journey with `#@VAN`!**
+**Ready to supercharge your Claude Code workflow? Start with `./init-memory-bank.sh` and begin your journey with `@VAN`!**

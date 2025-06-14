@@ -89,7 +89,7 @@ check_exists "CLAUDE.md" "file"
 echo ""
 if [ $VALIDATION_FAILED -eq 0 ]; then
     echo -e "${GREEN}✅ Memory Bank validation PASSED!${NC}"
-    echo -e "${GREEN}🚀 Ready to start workflow with #@VAN mode${NC}"
+    echo -e "${GREEN}🚀 Ready to start workflow with @VAN mode${NC}"
     exit 0
 else
     echo -e "${RED}❌ Memory Bank validation FAILED!${NC}"
