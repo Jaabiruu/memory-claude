@@ -1,6 +1,6 @@
 # Project Complexity Assessment
 
-## Complexity Level: Not Assessed
+## Complexity Level: Ready for Assessment
 
 ### Assessment Criteria
 

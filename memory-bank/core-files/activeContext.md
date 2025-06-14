@@ -1,7 +1,7 @@
 # Active Context
 
 ## Current Focus
-*No active context - workflow not yet initialized*
+*Ready for workflow - use #@VAN to set initial focus*
 
 ## Working Files
 *Files currently being modified will be listed here*
@@ -10,9 +10,9 @@
 *Next immediate actions and decisions*
 
 ## Context Window Status
-- **Usage**: Monitoring not yet active
-- **Threshold**: 75% warning, 85% documentation, 95% compaction
-- **Last Check**: Not yet monitored
+- **Usage**: Monitoring active and ready
+- **Threshold**: 50% warning, 60% documentation, 70% compaction
+- **Last Check**: System ready for monitoring
 
 ## Active Decisions
 *Pending decisions and their context*
