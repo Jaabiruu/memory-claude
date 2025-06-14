@@ -105,7 +105,7 @@
 ## Usage Recommendations
 
 ### 🎯 Start Every Project with @VAN
-**Always begin with:** `#@VAN`
+**Always begin with:** `!@VAN`
 - Creates the sacred tasks.md file
 - Establishes complexity level and workflow path
 - Initializes context monitoring
@@ -128,10 +128,10 @@
 
 ### 📚 Leverage Accumulated Knowledge
 **Continuously growing:**
-- `#patterns` - View all discovered patterns
-- `#decisions` - Review architectural decisions
-- `#solutions [problem]` - Find similar solutions
-- `#recall [topic]` - Search entire knowledge base
+- `!patterns` - View all discovered patterns
+- `!decisions` - Review architectural decisions
+- `!solutions [problem]` - Find similar solutions
+- `!recall [topic]` - Search entire knowledge base
 
 ## System Readiness
 
@@ -144,4 +144,4 @@ The Claude Code Memory Bank Workflow Framework with fractal workflow enhancement
 ✅ **Continuous knowledge accumulation** across all projects  
 ✅ **Perfect workflow continuity** across sessions and context limits  
 
-**Start your next project with `#@VAN` and experience the enhanced workflow system!**
+**Start your next project with `!@VAN` and experience the enhanced workflow system!**

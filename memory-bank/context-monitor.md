@@ -18,7 +18,7 @@
 
 ### Monitoring Frequency
 - **Automatic**: After each mode transition
-- **Manual**: Via `#context-status` command
+- **Manual**: Via `!context-status` command
 - **Periodic**: Every 20 significant interactions
 - **Triggered**: Before major operations
 
@@ -125,11 +125,11 @@
 - **Hierarchical Context**: Organize by importance
 
 ### Monitoring Commands
-- `#context-status` - Show current context usage
-- `#preserve-now` - Force immediate preservation
-- `#compact-safe` - Preserve and compact safely
-- `#resume-check` - Validate resumption readiness
-- `#context-optimize` - Optimize context usage
+- `!context-status` - Show current context usage
+- `!preserve-now` - Force immediate preservation
+- `!compact-safe` - Preserve and compact safely
+- `!resume-check` - Validate resumption readiness
+- `!context-optimize` - Optimize context usage
 
 ---
 *This system ensures continuous workflow productivity regardless of context limitations*

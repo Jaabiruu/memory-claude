@@ -171,7 +171,7 @@ echo ""
 echo -e "${GREEN}🚀 Next steps:${NC}"
 echo "1. Ensure CLAUDE.md is in place"
 echo "2. Run: claude -c (for conversation continuity)"
-echo "3. Start with: #@VAN mode"
+echo "3. Start with: !@VAN mode"
 echo ""
 echo -e "${GREEN}📁 Structure created:${NC}"
 tree memory-bank/ 2>/dev/null || find memory-bank -type f | sort
