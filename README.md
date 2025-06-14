@@ -2,29 +2,40 @@
 
 A comprehensive workflow system for Claude Code that provides cognitive specialization, intelligent memory management, and structured development processes. Based on cursor-memory-bank methodology, adapted for CLI usage with native Claude Code capabilities.
 
-## 🎯 Quick Start
+## 🚀 Quick Start (Template Repository)
 
-1. **Clone the memory bank framework**
+### Option 1: Use GitHub Template (Recommended)
+1. **Click "Use this template"** on GitHub to create your project
+2. **Clone your new repository**:
    ```bash
-   git clone https://github.com/Jaabiruu/memory-claude.git
+   git clone https://github.com/yourusername/your-project-name.git
+   cd your-project-name
    ```
-
-2. **Navigate to your project and initialize**
+3. **Initialize Claude Code**:
    ```bash
-   cd your-project
-   claude init  # Creates CLAUDE.md (REQUIRED FIRST)
-   /path/to/memory-claude/init-memory-bank.sh  # Creates memory-bank structure
+   claude init
    ```
-
-   **Note**: The init script needs CLAUDE.md to exist first, so `claude init` must run before the memory bank initialization.
-
-3. **Start Claude Code with continuity**
+4. **Start working immediately**:
    ```bash
-   claude -c
+   !@VAN  # Begin with project analysis
    ```
 
-4. **Begin workflow**
+### Option 2: Manual Clone
+1. **Clone as your project**:
+   ```bash
+   git clone https://github.com/Jaabiruu/memory-claude.git your-project-name
+   cd your-project-name
    ```
+2. **Update remote to your repository**:
+   ```bash
+   git remote set-url origin https://github.com/yourusername/your-project-name.git
+   ```
+3. **Initialize Claude Code**:
+   ```bash
+   claude init
+   ```
+4. **Start working**:
+   ```bash
    !@VAN
    ```
 
@@ -166,66 +177,36 @@ The framework includes a 5-criteria evaluation system:
 - Before context preservation
 - After major decisions
 
-## 🔧 Installation & Setup
+## 🔧 Prerequisites
 
-### Prerequisites
-- Claude Code CLI installed
-- WSL/Linux environment (for scripts)
-- Git (for version control)
-
-### Setup Steps
-
-1. **Clone the framework**:
-   ```bash
-   git clone https://github.com/Jaabiruu/memory-claude.git
-   ```
-
-2. **Navigate to your project**:
-   ```bash
-   cd your-project
-   ```
-
-3. **Initialize Claude Code and memory bank**:
-   ```bash
-   claude init
-   ../memory-claude/init-memory-bank.sh
-   ```
-
-4. **Validate setup**:
-   ```bash
-   ../memory-claude/validate-memory-bank.sh
-   ```
-
-5. **Start Claude Code**:
-   ```bash
-   claude -c
-   ```
+- **Claude Code CLI installed**
+- **Git** (for version control)
+- **GitHub account** (for template usage)
 
 ## 🎯 Usage Examples
 
-### Starting a New Project
+### Starting a New Project (Template Method)
 ```bash
-# 1. Initialize
+# 1. Use GitHub template or clone
+git clone https://github.com/Jaabiruu/memory-claude.git my-new-project
 cd my-new-project
+
+# 2. Initialize Claude Code
 claude init
-../memory-claude/init-memory-bank.sh
 
-# 2. Start Claude
-claude -c
-
-# 3. Begin workflow
+# 3. Begin workflow immediately
 !@VAN
 ```
 
 ### Resuming Work
 ```bash
-# 1. Validate structure
-../memory-claude/validate-memory-bank.sh
+# 1. Navigate to your project
+cd my-project
 
 # 2. Start Claude with continuity
 claude -c
 
-# 3. Check current state
+# 3. Check current state and resume
 !context-status
 !recall current-project
 ```
