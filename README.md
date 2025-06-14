@@ -344,4 +344,4 @@ MIT License - feel free to use and modify for your projects.
 
 ---
 
-**Ready to supercharge your Claude Code workflow? Start with `./init-memory-bank.sh` and begin your journey with `#@VAN`!**
+**Ready to supercharge your Claude Code workflow? Start with `./init-memory-bank.sh` and begin your journey with `!@VAN`!**

@@ -208,7 +208,7 @@
 - **Level 1-2**: Project completion or iteration
 - **Level 3-4**: Proceed to @ARCHIVE mode
 
-**Transition Command**: `#@ARCHIVE` or project completion
+**Transition Command**: `!@ARCHIVE` or project completion
 
 ## Context Preservation Notes
 

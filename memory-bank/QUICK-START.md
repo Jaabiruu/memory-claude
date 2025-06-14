@@ -6,61 +6,61 @@
 
 ### 1. Initialize New Project Workflow
 ```bash
-#@VAN  # Start with project analysis and complexity assessment
+!@VAN  # Start with project analysis and complexity assessment
 ```
 
 ### 2. Continue Existing Project  
 ```bash
-#resume-from latest  # Resume from last session
+!resume-from latest  # Resume from last session
 ```
 
 ### 3. Work on Specific Subtask
 ```bash
-#@SUBTASK-VAN [task-name]  # Apply VAN analysis to subtask
-#@FRACTAL-WORKFLOW [task-name]  # Apply full workflow to complex subtask
+!@SUBTASK-VAN [task-name]  # Apply VAN analysis to subtask
+!@FRACTAL-WORKFLOW [task-name]  # Apply full workflow to complex subtask
 ```
 
 ## Essential Commands Reference
 
 ### Core Workflow Modes
-- `#@VAN` - Analyze and break down project/task
-- `#@PLAN` - Create implementation strategy  
-- `#@CREATIVE` - Explore design alternatives
-- `#@IMPLEMENT` - Code and build features
-- `#@REFLECT` - Quality assessment and testing
-- `#@ARCHIVE` - Document and preserve knowledge
+- `!@VAN` - Analyze and break down project/task
+- `!@PLAN` - Create implementation strategy  
+- `!@CREATIVE` - Explore design alternatives
+- `!@IMPLEMENT` - Code and build features
+- `!@REFLECT` - Quality assessment and testing
+- `!@ARCHIVE` - Document and preserve knowledge
 
 ### Fractal Workflow (Enhanced Feature)
-- `#@SUBTASK-VAN [task]` - Analyze specific subtask
-- `#@FRACTAL-WORKFLOW [task]` - Full workflow for complex subtask
-- `#feedback-loop` - Integrate subtask results to project level
+- `!@SUBTASK-VAN [task]` - Analyze specific subtask
+- `!@FRACTAL-WORKFLOW [task]` - Full workflow for complex subtask
+- `!feedback-loop` - Integrate subtask results to project level
 
 ### Context Management
-- `#context-status` - Check context usage
-- `#preserve-now` - Save current state immediately
-- `#compact-safe` - Preserve context and clear conversation
+- `!context-status` - Check context usage
+- `!preserve-now` - Save current state immediately
+- `!compact-safe` - Preserve context and clear conversation
 
 ### Knowledge Management  
-- `#patterns` - View discovered patterns
-- `#decisions` - Review decisions made
-- `#solutions [problem]` - Find solution to problem
-- `#recall [topic]` - Search knowledge base
+- `!patterns` - View discovered patterns
+- `!decisions` - Review decisions made
+- `!solutions [problem]` - Find solution to problem
+- `!recall [topic]` - Search knowledge base
 
 ## Quick Workflow Paths
 
 ### Simple Project (Level 1)
 ```
-#@VAN → #@IMPLEMENT → #@REFLECT
+!@VAN → !@IMPLEMENT → !@REFLECT
 ```
 
 ### Moderate Project (Level 2)  
 ```
-#@VAN → #@PLAN → #@IMPLEMENT → #@REFLECT
+!@VAN → !@PLAN → !@IMPLEMENT → !@REFLECT
 ```
 
 ### Complex Project (Level 3-4)
 ```
-#@VAN → #@PLAN → #@CREATIVE → #@IMPLEMENT → #@REFLECT → #@ARCHIVE
+!@VAN → !@PLAN → !@CREATIVE → !@IMPLEMENT → !@REFLECT → !@ARCHIVE
 ```
 
 ## Key Features
@@ -121,4 +121,4 @@ memory-bank/
 ---
 **🎉 You're ready to use the enhanced Claude Code Memory Bank workflow system!**
 
-Start with `#@VAN` and let the cognitive specialization guide you to better outcomes.
+Start with `!@VAN` and let the cognitive specialization guide you to better outcomes.

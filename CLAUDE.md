@@ -113,47 +113,47 @@ After `/compact` execution:
 ## Workflow Mode Commands
 
 ### Quick Mode Switching
-- `#@VAN` - Enter VAN (Validation & Analysis) mode
-- `#@PLAN` - Enter PLAN (Planning & Strategy) mode
-- `#@CREATIVE` - Enter CREATIVE (Design & Architecture) mode
-- `#@IMPLEMENT` - Enter IMPLEMENT (Development & Execution) mode
-- `#@REFLECT` - Enter REFLECT (Quality & Validation) mode
-- `#@ARCHIVE` - Enter ARCHIVE (Knowledge & Documentation) mode
+- `!@VAN` - Enter VAN (Validation & Analysis) mode
+- `!@PLAN` - Enter PLAN (Planning & Strategy) mode
+- `!@CREATIVE` - Enter CREATIVE (Design & Architecture) mode
+- `!@IMPLEMENT` - Enter IMPLEMENT (Development & Execution) mode
+- `!@REFLECT` - Enter REFLECT (Quality & Validation) mode
+- `!@ARCHIVE` - Enter ARCHIVE (Knowledge & Documentation) mode
 
 ### Context Management Commands
-- `#context-status` - Show current context usage percentage
-- `#preserve-now` - Force immediate context preservation
-- `#compact-safe` - Preserve context and execute /compact
-- `#resume-from [snapshot]` - Resume from specific snapshot
-- `#knowledge-search [query]` - Search accumulated knowledge base
+- `!context-status` - Show current context usage percentage
+- `!preserve-now` - Force immediate context preservation
+- `!compact-safe` - Preserve context and execute /compact
+- `!resume-from [snapshot]` - Resume from specific snapshot
+- `!knowledge-search [query]` - Search accumulated knowledge base
 
 ### Knowledge Management Commands
-- `#recall [topic]` - Search knowledge base for specific topic
-- `#patterns` - List all discovered development patterns
-- `#decisions` - Review architectural decisions made
-- `#solutions [problem]` - Find solutions to similar problems
-- `#next` - Proceed to next logical workflow mode
+- `!recall [topic]` - Search knowledge base for specific topic
+- `!patterns` - List all discovered development patterns
+- `!decisions` - Review architectural decisions made
+- `!solutions [problem]` - Find solutions to similar problems
+- `!next` - Proceed to next logical workflow mode
 
 ### Intelligent Curation Commands
-- `#evaluate-session` - Evaluate all discoveries from current session
-- `#evaluate-item [item]` - Evaluate specific item for inclusion
-- `#curation-status` - Show current curation queue and statistics
-- `#review-queue [priority|all]` - Show items requiring manual review
-- `#approve [item-id]` - Manually approve item for inclusion
-- `#reject [item-id]` - Manually reject item with rationale
-- `#force-include [item]` - Override low score to include
-- `#force-exclude [item]` - Override high score to exclude
-- `#set-threshold [category] [value]` - Adjust category thresholds
-- `#curation-settings` - View/modify curation configuration
+- `!evaluate-session` - Evaluate all discoveries from current session
+- `!evaluate-item [item]` - Evaluate specific item for inclusion
+- `!curation-status` - Show current curation queue and statistics
+- `!review-queue [priority|all]` - Show items requiring manual review
+- `!approve [item-id]` - Manually approve item for inclusion
+- `!reject [item-id]` - Manually reject item with rationale
+- `!force-include [item]` - Override low score to include
+- `!force-exclude [item]` - Override high score to exclude
+- `!set-threshold [category] [value]` - Adjust category thresholds
+- `!curation-settings` - View/modify curation configuration
 
 ### Fractal Workflow Commands
-- `#@SUBTASK-VAN [task]` - Apply VAN mode to specific subtask
-- `#@SUBTASK-PLAN [task]` - Apply PLAN mode to specific subtask
-- `#@SUBTASK-CREATIVE [task]` - Apply CREATIVE mode to specific subtask
-- `#@SUBTASK-IMPLEMENT [task]` - Apply IMPLEMENT mode to specific subtask
-- `#@SUBTASK-REFLECT [task]` - Apply REFLECT mode to specific subtask
-- `#@FRACTAL-WORKFLOW [task]` - Apply full workflow to complex subtask
-- `#feedback-loop` - Integrate subtask results back to project level
+- `!@SUBTASK-VAN [task]` - Apply VAN mode to specific subtask
+- `!@SUBTASK-PLAN [task]` - Apply PLAN mode to specific subtask
+- `!@SUBTASK-CREATIVE [task]` - Apply CREATIVE mode to specific subtask
+- `!@SUBTASK-IMPLEMENT [task]` - Apply IMPLEMENT mode to specific subtask
+- `!@SUBTASK-REFLECT [task]` - Apply REFLECT mode to specific subtask
+- `!@FRACTAL-WORKFLOW [task]` - Apply full workflow to complex subtask
+- `!feedback-loop` - Integrate subtask results back to project level
 
 ## Complexity-Based Routing
 
@@ -225,7 +225,7 @@ The fractal workflow applies the full 6-mode cognitive specialization to individ
 - Identify subtask improvements and optimizations
 - Document subtask lessons learned
 
-#### 6. Subtask Integration (#feedback-loop)
+#### 6. Subtask Integration (!feedback-loop)
 - Integrate subtask results back to project level
 - Update project-level progress and context
 - Apply subtask learnings to project knowledge base
@@ -241,7 +241,7 @@ The fractal workflow applies the full 6-mode cognitive specialization to individ
 - Subtask involves new technology or patterns
 
 **Manual Triggers:**
-- Use `#@FRACTAL-WORKFLOW [task]` command
+- Use `!@FRACTAL-WORKFLOW [task]` command
 - High-risk or critical subtasks
 - Subtasks with unclear requirements
 - Subtasks requiring creative exploration
@@ -289,7 +289,7 @@ Each mode has specific entry and exit criteria:
 
 ### Think Tool Triggers
 - Automatic Think tool activation for complex decisions
-- Manual Think tool invocation with `#think [context]`
+- Manual Think tool invocation with `!think [context]`
 - Cross-mode reasoning validation at transition points
 - Quality gate Think tool checkpoints
 
@@ -330,10 +330,10 @@ Each mode has specific entry and exit criteria:
 - Workflow integrity checks across sessions
 
 ### Manual Validation
-- `#validate-workflow` - Check current workflow state integrity
-- `#validate-context` - Verify context preservation completeness
-- `#validate-knowledge` - Check knowledge base consistency
-- `#validate-session` - Validate session state and continuity
+- `!validate-workflow` - Check current workflow state integrity
+- `!validate-context` - Verify context preservation completeness
+- `!validate-knowledge` - Check knowledge base consistency
+- `!validate-session` - Validate session state and continuity
 
 ## Intelligent Memory Curation System
 

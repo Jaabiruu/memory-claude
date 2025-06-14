@@ -165,7 +165,7 @@
 
 **All Complexity Levels**: Proceed to @IMPLEMENT mode
 
-**Transition Command**: `#@IMPLEMENT`
+**Transition Command**: `!@IMPLEMENT`
 
 ## Context Preservation Notes
 

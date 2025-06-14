@@ -161,7 +161,7 @@
 - **Level 2**: Proceed to @IMPLEMENT mode
 - **Level 3-4**: Proceed to @CREATIVE mode
 
-**Transition Command**: `#@CREATIVE` or `#@IMPLEMENT` based on complexity
+**Transition Command**: `!@CREATIVE` or `!@IMPLEMENT` based on complexity
 
 ## Context Preservation Notes
 
