@@ -54,7 +54,7 @@ memory-bank/active-session/next-steps.md
 
 # Memory Bank - Exclude session snapshots with potentially sensitive data
 memory-bank/session-snapshots/*.md
-!memory-bank/session-snapshots/README.md
+!memory-bank/session-snapshots/SNAPSHOTS-GUIDE.md
 
 # Memory Bank - Exclude populated knowledge base if it contains proprietary info
 # Uncomment these lines if your knowledge base contains sensitive information:
