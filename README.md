@@ -6,6 +6,7 @@ A comprehensive workflow system for Claude Code that provides cognitive speciali
 
 1. **Clone the memory bank framework**
    ```bash
+      cd your-project
    git clone https://github.com/Jaabiruu/memory-claude.git
    ```
 
@@ -13,7 +14,6 @@ A comprehensive workflow system for Claude Code that provides cognitive speciali
    ```bash
    cd your-project
    claude init  # Creates CLAUDE.md (REQUIRED FIRST)
-   /path/to/memory-claude/init-memory-bank.sh  # Creates memory-bank structure
    ```
 
    **Note**: The init script needs CLAUDE.md to exist first, so `claude init` must run before the memory bank initialization.
