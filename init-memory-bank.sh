@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Memory Bank Initialization Script
-# Usage: ./init-memory-bank.sh [project-directory]
+# Usage: ./init-memory-bank.sh
 
 set -e
 
@@ -11,19 +11,8 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# Default to current directory if no argument provided
-PROJECT_DIR="${1:-.}"
-
 echo -e "${GREEN}🏦 Initializing Memory Bank Workflow Framework${NC}"
-echo "Target directory: $PROJECT_DIR"
-
-# Create project directory if it doesn't exist
-if [ ! -d "$PROJECT_DIR" ]; then
-    echo -e "${YELLOW}📁 Creating project directory: $PROJECT_DIR${NC}"
-    mkdir -p "$PROJECT_DIR"
-fi
-
-cd "$PROJECT_DIR"
+echo "Working in current directory: $(pwd)"
 
 # Create directory structure in current folder
 echo -e "${GREEN}🔧 Creating memory bank directory structure...${NC}"
@@ -157,7 +146,7 @@ touch workflow-modes/archive-mode.md
 # Copy CLAUDE.md if it doesn't exist
 if [ ! -f "CLAUDE.md" ]; then
     echo -e "${YELLOW}📋 CLAUDE.md not found. You need to add your CLAUDE.md file.${NC}"
-    echo "   Place your CLAUDE.md file in: $PROJECT_DIR/CLAUDE.md"
+    echo "   Place your CLAUDE.md file in the current directory"
 else
     echo -e "${GREEN}✅ CLAUDE.md found${NC}"
 fi

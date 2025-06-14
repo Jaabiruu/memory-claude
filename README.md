@@ -179,20 +179,17 @@ The framework includes a 5-criteria evaluation system:
    git clone https://github.com/Jaabiruu/memory-claude.git
    ```
 
-2. **Navigate to your project**:
-   ```bash
-   cd your-project
-   ```
+2. **Navigate to your project directory**
 
 3. **Initialize Claude Code and memory bank**:
    ```bash
    claude init
-   ../memory-claude/init-memory-bank.sh
+   ./init-memory-bank.sh
    ```
 
 4. **Validate setup**:
    ```bash
-   ../memory-claude/validate-memory-bank.sh
+   ./validate-memory-bank.sh
    ```
 
 5. **Start Claude Code**:
@@ -205,9 +202,8 @@ The framework includes a 5-criteria evaluation system:
 ### Starting a New Project
 ```bash
 # 1. Initialize
-cd my-new-project
 claude init
-../memory-claude/init-memory-bank.sh
+./init-memory-bank.sh
 
 # 2. Start Claude
 claude -c
@@ -219,7 +215,7 @@ claude -c
 ### Resuming Work
 ```bash
 # 1. Validate structure
-../memory-claude/validate-memory-bank.sh
+./validate-memory-bank.sh
 
 # 2. Start Claude with continuity
 claude -c
@@ -269,7 +265,7 @@ claude -c
 ### Common Issues
 
 **"Workflow commands not working"**
-- Run `../memory-claude/validate-memory-bank.sh` to check structure
+- Run `./validate-memory-bank.sh` to check structure
 - Ensure all workflow directories exist (workflow-modes, knowledge-base, etc.)
 
 **"Mode checklist items failing"**
@@ -287,7 +283,7 @@ claude -c
 ### Validation
 ```bash
 # Check complete structure
-../memory-claude/validate-memory-bank.sh
+./validate-memory-bank.sh
 
 # Verify individual components
 ls -la core-files/

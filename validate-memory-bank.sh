@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Memory Bank Validation Script
-# Usage: ./validate-memory-bank.sh [project-directory]
+# Usage: ./validate-memory-bank.sh
 
 set -e
 
@@ -11,13 +11,8 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# Default to current directory if no argument provided
-PROJECT_DIR="${1:-.}"
-
 echo -e "${GREEN}🔍 Validating Memory Bank Structure${NC}"
-echo "Target directory: $PROJECT_DIR"
-
-cd "$PROJECT_DIR"
+echo "Working in current directory: $(pwd)"
 
 VALIDATION_FAILED=0
 
